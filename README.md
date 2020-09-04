@@ -50,14 +50,13 @@ Things you may want to cover:
 | --------------- | ---------- | ------------------------------ |
 | users_id        | references | null: false, foreign_key: true |
 | items_id        | references | null: false, foreign_key: true |
-| shippings_id    | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
 - belongs_to :items
 - belongs_to :credit_cards
-- belongs_to :shippings
+- has_one :shippings
 
 ## credit_cards テーブル
 
