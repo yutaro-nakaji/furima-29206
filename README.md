@@ -41,7 +41,7 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :user
+- belongs_to :users
 - has_one :item_purchases
 
 ## item_purchases テーブル
@@ -53,7 +53,7 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :user
+- belongs_to :users
 - belongs_to :items
 - has_one :shippings
 
