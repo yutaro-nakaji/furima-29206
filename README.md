@@ -55,7 +55,6 @@ Things you may want to cover:
 
 - belongs_to :user
 - belongs_to :items
-- belongs_to :credit_cards
 - has_one :shippings
 
 ## shippings テーブル
