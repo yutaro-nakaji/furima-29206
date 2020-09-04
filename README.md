@@ -37,7 +37,7 @@ Things you may want to cover:
 | shipping_region_id     | integer    | null: false                    |
 | days_until_shipping_id | integer    | null: false                    |
 | price                  | integer    | null: false                    |
-| user_id                | references | null: false, foreign_key: true |
+| user                   | references | null: false, foreign_key: true |
 
 ### Association
 
