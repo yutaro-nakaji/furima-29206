@@ -41,8 +41,8 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :users
-- has_one :item_purchases
+- belongs_to :user
+- has_one :item_purchase
 
 ## item_purchases テーブル
 
