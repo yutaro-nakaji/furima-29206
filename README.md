@@ -53,9 +53,9 @@ Things you may want to cover:
 
 ### Association
 
-- belongs_to :users
-- belongs_to :items
-- has_one :shippings
+- belongs_to :user
+- belongs_to :item
+- has_one :shipping
 
 ## shippings テーブル
 
