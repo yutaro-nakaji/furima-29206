@@ -30,7 +30,7 @@ Things you may want to cover:
 | Column              | Type       | Options                        |
 | ------------------- | ---------- | ------------------------------ |
 | name                | string     | null: false                    |
-| explanation         | string     | null: false                    |
+| explanation         | text       | null: false                    |
 | category            | string     | null: false                    |
 | status              | string     | null: false                    |
 | shipping_charges    | string     | null: false                    |
