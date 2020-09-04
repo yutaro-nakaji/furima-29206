@@ -67,7 +67,7 @@ Things you may want to cover:
 | house_number     | string     | null: false                    |
 | building_name    | string     |                                |
 | phone_number     | integer    | null: false                    |
-| item_purchase_id | references | null: false, foreign_key: true |
+| item_purchase    | references | null: false, foreign_key: true |
 
 ### Association
 
