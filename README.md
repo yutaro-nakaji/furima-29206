@@ -58,18 +58,6 @@ Things you may want to cover:
 - belongs_to :credit_cards
 - has_one :shippings
 
-## credit_cards テーブル
-
-| Column          | Type    | Options     |
-| --------------- | ------- | ------------|
-| card_number     | integer | null: false |
-| expiration_date | integer | null: false |
-| security_code   | integer | null: false |
-
-### Association
-
-- has_many :buys
-
 ## shippings テーブル
 
 | Column        | Type    | Options     |
