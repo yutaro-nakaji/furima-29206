@@ -50,7 +50,6 @@ Things you may want to cover:
 | --------------- | ---------- | ------------------------------ |
 | users_id        | references | null: false, foreign_key: true |
 | items_id        | references | null: false, foreign_key: true |
-| credit_cards_id | references | null: false, foreign_key: true |
 | shippings_id    | references | null: false, foreign_key: true |
 
 ### Association
