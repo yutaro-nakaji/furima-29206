@@ -17,35 +17,6 @@ RSpec.describe User, type: :model do
         another_user.email = 'bbbbb@gmail.com'
         expect(another_user).to be_valid
       end
-      it "emailに'@'が含まれていれば登録できる" do
-        expect(@user).to be_valid
-      end
-      it 'passwordが6文字以上であれば登録できる' do
-        @user.password = '1a1a1a'
-        @user.password_confirmation = '1a1a1a'
-        expect(@user).to be_valid
-      end
-      it 'passwordが半角英数字混合であれば登録できる' do
-        @user.password = '1a1a1a'
-        @user.password_confirmation = '1a1a1a'
-        expect(@user).to be_valid
-      end
-      it 'first_nameが全角（漢字・ひらがな・カタカナ）で入力されれば登録される' do
-        @user.first_name = '山だダ'
-        expect(@user).to be_valid
-      end
-      it 'last_nameが全角（漢字・ひらがな・カタカナ）で入力されれば登録される' do
-        @user.last_name = '太ろウ'
-        expect(@user).to be_valid
-      end
-      it 'first_name_kanaが全角（カタカナ）で入力されれば登録される' do
-        @user.first_name_kana = 'ヤマダ'
-        expect(@user).to be_valid
-      end
-      it 'last_name_kanaが全角（カタカナ）で入力されれば登録される' do
-        @user.last_name_kana = 'タロウ'
-        expect(@user).to be_valid
-      end
     end
 
     context '新規登録がうまくいかないとき' do
