@@ -52,3 +52,4 @@ production:
   database: furima_29206_production
   username: furima_29206
   password: <%= ENV['FURIMA_29206_DATABASE_PASSWORD'] %>
+  encoding: utf8
