@@ -11,7 +11,11 @@ RSpec.describe User, type: :model do
         expect(@user).to be_valid
       end
       it "emailが既に登録されているデータと重複しなければ登録できる" do
-        expect(@user).to be_valid
+        @user.email = "aaaaa@gmail.com"
+        @user.save
+        another_user = FactoryBot.build(:user)
+        another_user.email = "bbbbb@gmail.com"
+        expect(another_user).to be_valid
       end
       it "emailに'@'が含まれていれば登録できる" do
         expect(@user).to be_valid
