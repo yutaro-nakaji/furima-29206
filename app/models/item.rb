@@ -1,6 +1,6 @@
 class Item < ApplicationRecord
   belongs_to :user
-  
+
   with_options presence: true do
     validates :name
     validates :explanation
@@ -10,5 +10,6 @@ class Item < ApplicationRecord
     validates :shipping_region_id
     validates :days_until_shipping_id
   end
-  validates :price, presence: true, inclusion: {in: 300..9999999 }
+  PRICE_REGEX = /\A[0-9]+\z/.freeze
+  validates :price, presence: true, inclusion: {in: 300..9999999 }, format: { with: PRICE_REGEX }
 end
