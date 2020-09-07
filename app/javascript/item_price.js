@@ -8,8 +8,8 @@ function price_calc(){
     //valueプロパティで販売価格の取得
     const value = price.value; 
     if (value >= 300 && value <= 9999999){
-      let fee = Math.floor(value * 0.1)
-      let gains = value - fee
+      let fee = Math.floor(value * 0.1);
+      let gains = value - fee;
       tax.textContent = fee;
       profit.textContent = gains;
     } else {
