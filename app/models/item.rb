@@ -17,5 +17,5 @@ class Item < ApplicationRecord
   validates :shipping_region_id, presence: true, numericality: { other_than: 1 }
   validates :days_until_shipping_id, presence: true, numericality: { other_than: 1 }
   PRICE_REGEX = /\A[0-9]+\z/.freeze
-  validates :price, presence: true, inclusion: {in: 300..9999999 }, format: { with: PRICE_REGEX }
+  validates :price, presence: true, inclusion: { in: 300..9_999_999 }, format: { with: PRICE_REGEX }
 end
