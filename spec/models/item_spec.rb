@@ -8,7 +8,7 @@ RSpec.describe Item, type: :model do
 
   describe '商品出品機能' do
     context '商品出品がうまくいくとき' do
-      it 'image/name/explanation/category_id/status_id/shipping_charges_id/shipping_region_id/days_until_shipping_id/price/user_idが存在すれば登録できる' do
+      it 'image/name/explanation/category_id/status_id/shipping_charge_id/shipping_region_id/days_until_shipping_id/price/user_idが存在すれば登録できる' do
         expect(@item).to be_valid
       end
     end
@@ -39,10 +39,10 @@ RSpec.describe Item, type: :model do
         @item.valid?
         expect(@item.errors.full_messages).to include('Status Select')
       end
-      it 'shipping_charges_idが1（発送料の負担が未選択）だと登録できない' do
-        @item.shipping_charges_id = '1'
+      it 'shipping_charge_idが1（発送料の負担が未選択）だと登録できない' do
+        @item.shipping_charge_id = '1'
         @item.valid?
-        expect(@item.errors.full_messages).to include('Shipping charges Select')
+        expect(@item.errors.full_messages).to include('Shipping charge Select')
       end
       it 'shipping_region_idが1（発送元の地域が未選択）だと登録できない' do
         @item.shipping_region_id = '1'
