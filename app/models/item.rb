@@ -17,7 +17,7 @@ class Item < ApplicationRecord
   validates :explanation, presence: true
   validates :category_id, numericality: { other_than: 1, message: 'Select' }
   validates :status_id, numericality: { other_than: 1, message: 'Select' }
-  validates :shipping_charges_id, numericality: { other_than: 1, message: 'Select' }
+  validates :shipping_charge_id, numericality: { other_than: 1, message: 'Select' }
   validates :shipping_region_id, numericality: { other_than: 1, message: 'Select' }
   validates :days_until_shipping_id, numericality: { other_than: 1, message: 'Select' }
   PRICE_REGEX = /\A[0-9]+\z/.freeze
