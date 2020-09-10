@@ -23,7 +23,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
-- has_many :item_purchases
+- has_many :orders
 
 ## items テーブル
 
@@ -33,7 +33,7 @@ Things you may want to cover:
 | explanation            | text       | null: false                    |
 | category_id            | integer    | null: false                    |
 | status_id              | integer    | null: false                    |
-| shipping_charge_id    | integer    | null: false                    |
+| shipping_charge_id     | integer    | null: false                    |
 | shipping_region_id     | integer    | null: false                    |
 | days_until_shipping_id | integer    | null: false                    |
 | price                  | integer    | null: false                    |
@@ -42,9 +42,9 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :user
-- has_one :item_purchase
+- has_one :order
 
-## item_purchases テーブル
+## orders テーブル
 
 | Column          | Type       | Options                        |
 | --------------- | ---------- | ------------------------------ |
@@ -67,11 +67,11 @@ Things you may want to cover:
 | house_number     | string     | null: false                    |
 | building_name    | string     |                                |
 | phone_number     | integer    | null: false                    |
-| item_purchase    | references | null: false, foreign_key: true |
+| order            | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to :item_purchase
+- belongs_to :order
 
 
 
