@@ -52,6 +52,11 @@ RSpec.describe OrderShipping, type: :model do
         @order_shipping.valid?
         expect(@order_shipping.errors.full_messages).to include('Phone number is invalid')
       end
+      it 'phone_numberに"-"が含まれていると登録できない' do
+        @order_shipping.phone_number = '090-1234-5678'
+        @order_shipping.valid?
+        expect(@order_shipping.errors.full_messages).to include('Phone number is invalid')
+      end
     end
   end
 end
