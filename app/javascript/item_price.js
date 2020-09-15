@@ -20,4 +20,5 @@
       }
     });
   }
+//ページがロードされた時イベント発火
 window.addEventListener('load', price_calc);
