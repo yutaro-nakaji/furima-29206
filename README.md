@@ -5,7 +5,6 @@ application up and running.
 
 Things you may want to cover:
 
-
 # テーブル設計
 
 ## users テーブル
