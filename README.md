@@ -74,7 +74,6 @@ Things you may want to cover:
 - belongs_to :order
 
 
-
 * Ruby version
 
 * System dependencies
